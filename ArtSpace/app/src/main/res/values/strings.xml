@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="artwork">Art Work</string>
+    <string name="ophelia">Drowning Ophelia</string>
+    <string name="ophelia_artist">Sir John Everett</string>
+    <string name="ophelia_year">1851</string>
+    <string name="mona_lisa">Mona Lisa</string>
+    <string name="mona_lisa_artist">Leonardo da Vinci</string>
+    <string name="mona_lisa_year">1503</string>
+    <string name="girl_earring">Girl with a Pearl Earring</string>
+    <string name="girl_earring_artist">Johannes Vermeer</string>
+    <string name="girl_earring_year">1665</string>
+    <string name="night_watch">The Night watch</string>
+    <string name="night_watch_artist">Rembrandt Van Rijn</string>
+    <string name="night_watch_year">1642</string>
+    <string name="feel_you">I Could Feel You</string>
+    <string name="feel_you_artist">Tracey Emin</string>
+    <string name="feel_you_year">2014</string>
+</resources>

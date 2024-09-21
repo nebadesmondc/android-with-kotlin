@@ -1,0 +1,62 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android Studio files
+.idea/
+*.iml
+*.hprof
+
+# Gradle files
+.gradle/
+build/
+*/build/
+captures/
+.externalNativeBuild/
+local.properties
+
+# Kotlin specific
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.log
+
+# Generated files
+*.apk
+*.ap_
+*.dex
+*.so
+*.dSYM
+
+# Miscellaneous
+*.DS_Store
+*.orig
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+
+# User-specific files
+*.jks
+*.keystore
+*.properties
+
+# Other files to ignore
+*.log
+*.csv
+*.tsv
