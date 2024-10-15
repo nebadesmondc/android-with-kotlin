@@ -20,12 +20,16 @@ class WeatherViewModel: ViewModel() {
         _weatherResult.value = NetworkResponse.Loading
         viewModelScope.launch {
             val response = weatherApiService.getCurrentWeather(apiKey = Constant.apiKey, location = city)
-            if (response.isSuccessful) {
-                response.body()?.let {
-                    _weatherResult.value = NetworkResponse.Success(it)
+            try {
+                if (response.isSuccessful) {
+                    response.body()?.let {
+                        _weatherResult.value = NetworkResponse.Success(it)
+                    }
+                } else {
+                    _weatherResult.value = NetworkResponse.Error("Failed to load data")
                 }
-            } else {
-                _weatherResult.value = NetworkResponse.Error("Failed to load data")
+            } catch (e : Exception) {
+                _weatherResult.value = NetworkResponse.Error(e.message ?: "Failed to load data")
             }
         }
     }
