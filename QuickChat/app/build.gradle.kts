@@ -72,6 +72,7 @@ dependencies {
     implementation(libs.dagger.hilt.android)
     implementation(libs.firebase.crashlytics.buildtools)
     kapt(libs.dagger.hilt.compiler)
+    implementation(libs.dagger.hilt.compose)
     implementation(libs.androidx.material3.android)
     implementation(libs.coil)
     implementation(libs.androidx.navigation)
