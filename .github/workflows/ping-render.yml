@@ -1,0 +1,16 @@
+name: Keep Backend Awake
+
+on:
+  schedule:
+    - cron: '*/14 * * * *' # Every 14 minutes
+  workflow_dispatch:       # Optional: allow manual trigger
+
+jobs:
+  ping-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send ping to backend
+        run: |
+          echo "Pinging backend at https://real-estate-server-app.onrender.com/api/hello"
+          curl -s -o /dev/null -w "%{http_code}" https://real-estate-server-app.onrender.com/api/hello 
