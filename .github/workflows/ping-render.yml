@@ -13,4 +13,5 @@ jobs:
       - name: Send ping to backend
         run: |
           echo "Pinging backend at https://real-estate-server-app.onrender.com/api/hello"
-          curl -s -o /dev/null -w "%{http_code}" https://real-estate-server-app.onrender.com/api/hello 
+          curl -s -o /dev/null -w "%{http_code}" https://real-estate-server-app.onrender.com/api/hello
+          curl -s -o /dev/null -w "%{http_code}" https://duepay-server.onrender.com/
